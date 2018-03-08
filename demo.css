@@ -2,31 +2,201 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    /* font-size: 12px; */
+    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    box-sizing: border-box;
+    /* color: #3c3c3c; */
 }
-body{
 
-}
 .wrapper{
-    width: 1200px;
-    margin: 0 auto;
     background-color: #f5f5f5;
 }
 .wrapper .nav{
     width: 100%;
     height: 36px;
-}.wrapper .search{
+    font-size: 12px;
+}
+.wrapper .nav-item{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.wrapper .nav .nav-left ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.wrapper .nav .nav-left ul li{
+    margin-right: 15px;
+    line-height: 36px;
+}
+.wrapper .nav .nav-right ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: center;
+}
+.wrapper .nav .nav-right ul li{
+    margin-right: 15px;
+    line-height: 36px;
+}
+.wrapper .search{
     width: 100%;
-    height: 130px;
+    height: 140px;
     background-color: #fff;
+}
+.wrapper .search .search-item{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.wrapper .search .search-mid{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 12px;
+}
+.wrapper .search .search-mid ul{
+    display: flex;
+    flex-direction: row;
+
+}
+.wrapper .search .search-mid ul li{
+    display: inline-block;
+    width: 36px;
+    height: 22px;
+    margin-right: 5px;
+}
+.wrapper .search .search-mid form{
+    margin-bottom: 5px;
+    position: relative;
+    left: -20px;
+}
+.wrapper .search .search-mid .txt{
+    width: 554px;
+    height: 40px;
+    border: 2px solid #f40;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right:0;
+}
+.wrapper .search .search-mid .btn{
+    width: 74px;
+    height: 40px;
+    border: 0;
+    background-image: linear-gradient(to right,#ff9000,#ff5000);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    left:-4px;
+    top: 1px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.wrapper .search .search-mid p {
+    position: relative;
+}
+/* .wrapper .search .search-mid p span:first-child{
+    position: absolute;
+    left: 0;
+} */
+.wrapper .search .search-mid p span:last-child{
+    position: absolute;
+    right: 40px;
+
+}
+.wrapper .search .search-right {
+    width: 74px;
+    height: 88px;
+    border: 1px solid #eee;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper .search .search-right a{
+    text-decoration: none;
+    color: #f40;
+    font-size: 12px;
+    text-align: center;
+}
+.wrapper  .search .search-right .sri{
+    width:64px;
+    height:64px;
+}
+.main .main-item{
+    width: 1200px;
+    margin: 0 auto;
 }
 .wrapper .main .main-nav{
     height: 30px;
     width: 100%;
-    background-color: #f40;
+    background-color: #ff9000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    line-height: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+.wrapper .main .main-nav .main-nav-fir{
+    width: 190px;
+    background-color:#ff5000;
+    font-size: 16px;
+    text-align: center;
+}
+.wrapper .main .main-nav .main-nav-oth{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    background-color: #ff9000;
+}
+.wrapper .main .main-nav .main-nav-oth ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-right: 15px;
+}
+.wrapper .main .main-nav .main-nav-oth ul li{
+    margin-right: 10px;
 }
 .wrapper .main .main-left{
     height: 522px;
-    background-color: #38e;
+    /* background-color: #38e; */
+}
+.wrapper .main .main-left ul{
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 190px;
+    padding: 5px 0;
+    border: 1px solid #ff5000;
+    border-top: 0;
+}
+.wrapper .main .main-left ul li{
+    width: 145px;
+    height: 32px;
+    /* padding: 0 20px 0 25px; */
+    margin: 0 auto;
+}
+.wrapper .main .main-left ul li a{
+    text-decoration: none;
+    color: #3c3c3c;
 }
 .wrapper .footer .fo-ad{
     height: 100px;
