@@ -67,18 +67,36 @@
 .wrapper .search .search-mid ul{
     display: flex;
     flex-direction: row;
-
 }
 .wrapper .search .search-mid ul li{
     display: inline-block;
     width: 36px;
     height: 22px;
     margin-right: 5px;
+    text-align: center;
+    line-height: 22px;
+    margin-bottom: -2px;
+    color: #ff5000;
+}
+.wrapper .search .search-mid ul li:hover{
+    background-color: #ffeee5;
+}
+.wrapper .search .search-mid ul .baby{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    background-image: linear-gradient(to right,#ff9000,#ff5000);
 }
 .wrapper .search .search-mid form{
     margin-bottom: 5px;
     position: relative;
     left: -20px;
+}
+.wrapper .search .search-mid form:focus{
+    outline: none;
+    border: 0;
 }
 .wrapper .search .search-mid .txt{
     width: 554px;
@@ -87,6 +105,11 @@
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-right:0;
+    padding: 0 30px;
+}
+.wrapper .search .search-mid .txt:focus{
+    /* border: 0; */
+    outline: none;
 }
 .wrapper .search .search-mid .btn{
     width: 74px;
@@ -122,6 +145,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 30px;
+    margin-right: 100px;
 }
 .wrapper .search .search-right a{
     text-decoration: none;
@@ -139,7 +164,8 @@
 }
 .wrapper .main .main-nav{
     height: 30px;
-    width: 100%;
+    width: 1200px;
+    margin: 0 auto;
     background-color: #ff9000;
     display: flex;
     flex-direction: row;
@@ -156,11 +182,13 @@
     text-align: center;
 }
 .wrapper .main .main-nav .main-nav-oth{
+    width: 1010px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    background-color: #ff9000;
+    /* background-color: #ff9000; */
+    background-image: linear-gradient(to right,#ff9000,#ff5000);
 }
 .wrapper .main .main-nav .main-nav-oth ul{
     display: flex;
@@ -169,22 +197,26 @@
     justify-content: flex-start;
     margin-right: 15px;
 }
+.wrapper .main .main-nav .main-nav-oth ul:first-child{
+    margin-left: 15px;
+}
 .wrapper .main .main-nav .main-nav-oth ul li{
-    margin-right: 10px;
+    margin-right: 15px;
+}
+.wrapper .main .main-item{
+    display: flex;
+    flex-direction: row;
 }
 .wrapper .main .main-left{
     height: 522px;
-    /* background-color: #38e; */
 }
 .wrapper .main .main-left ul{
-    /* padding: 10px; */
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: flex-start;
     flex-wrap: nowrap;
     width: 190px;
-    padding: 5px 0;
+    padding: 4px 0;
     border: 1px solid #ff5000;
     border-top: 0;
 }
@@ -198,7 +230,60 @@
     text-decoration: none;
     color: #3c3c3c;
 }
+.wrapper .main .main-item .main-mid{
+    height: 522px;
+    padding: 10px;
+}
+.wrapper .main .main-item .main-mid .main-mid-item{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper .main .main-item .main-mid .main-mid-item .main-mid-left{
+    display: flex;
+    /* margin: 10px; */
+}
+.wrapper .main .main-item .main-mid .main-mid-item .main-mid-left .main-mid-right{
+    margin-left: 10px;
+}
+.wrapper .main .main-item .main-mid .main-commend-fo{
+    display: flex;
+    font-size: 12px;
+}
+.wrapper .main .main-item .main-mid .main-commend-fo .main-commend-left{
+    width: 520px;
+}
+.wrapper .main .main-item .main-mid .main-commend-fo .main-commend-left .commend-left-logo{
+    height: 32px;
+    line-height: 32px;
+}
+.wrapper .main .main-item .main-mid .main-commend-fo .main-commend-left .left-img{
+    height: 201px;
+    width: 520px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 6px 0 0;
+    margin-top: -5px;
+    background-image:linear-gradient(to right,#000 16%,16%,#ff1648);
+    background-position: top left ;
+    background-size:100% 3px;
+    background-repeat: no-repeat;
+}
+.wrapper .main .main-item .main-mid .main-commend-fo .main-commend-left .left-img img:first-child{
+    margin-right: 10px;
+
+}
+.wrapper .main .main-item .main-mid .main-commend-fo .main-commend-right{
+    margin-left: 10px;
+    /* margin-top:13px; */
+}
+.wrapper .main .main-item .main-mid .main-commend-fo .main-commend-right span{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -2px;
+}
 .wrapper .footer .fo-ad{
     height: 100px;
-    background-color: #f40;
+    /* background-color: #f40; */
 }
